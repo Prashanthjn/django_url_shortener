@@ -26,7 +26,7 @@ def home(request):
             short_url=short_url
         )
 
-        return render(request,"home.html",{"short_url": short_url})
+        return render(request, "urlshortner/home.html", {"short_url": short_url})
     return render(request, "urlshortner/home.html")
 
 
