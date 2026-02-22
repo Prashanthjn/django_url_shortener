@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortner</title>
+</head>
+<body>
+    <h1>URL SHORTNER</h1>
+    <form method="POST">
+        {%csrf_token%}
+        <input type="url" name="long_url" placeholder="enter your url here" required>
+        <button type="submit">SHOTEN </button>
+    </form>
+
+    {% if short_url %}
+    <p>YOUR SHORT URL:
+        <a href="/{{ short_url}}">
+            {{ request.get_host }}/{{ short_url}}
+        </a>
+    </p>
+    {% endif %}
+</body>
+</html>
