@@ -1,0 +1,55 @@
+
+.container {
+    background: bisque;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 400px auto 400px auto;
+
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #45dd63;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+a {
+    color: #002f74;
+    text-decoration: none;
+}
+
+*{
+    font-family: "Gilda Display", serif;
+}
